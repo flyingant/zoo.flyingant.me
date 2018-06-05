@@ -1,0 +1,149 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.piggy {
+  width: 88px;
+  height: 62px;
+  margin: 0 auto;
+}
+
+.chicken {
+  width:148px;
+  height:110px;
+  margin: 0 auto;
+}
+
+.piggy-walk {
+  background: url('../images/piggy-walk.png') 100% 0 no-repeat;
+  animation:anim 1s steps(23) infinite,movelr 120s linear reverse infinite;
+  -webkit-animation:anim 1s steps(23) infinite,movelr 120s linear reverse infinite;
+}
+
+.piggy-chew {
+  background: url('../images/piggy-chew.png') 100% 0 no-repeat;
+  animation:chew 2.208s steps(52) alternate infinite;
+   -webkit-animation:chew 2.208s steps(52) alternate infinite;
+}
+
+.piggy-look {
+  background: url('../images/piggy-look.png') 100% 0 no-repeat;
+  animation:anim-look 2s steps(47) alternate infinite;
+  -webkit-animation:anim-look 2s steps(47) alternate infinite;
+}
+
+.piggy-nibble {
+  background: url('../images/piggy-nibble.png') 100% 0 no-repeat;
+  animation:anim-nibble 2s steps(59) alternate infinite;
+  -webkit-animation:anim-nibble 2s steps(59) alternate infinite;
+}
+
+.chicken-walk {
+  background: url('../images/chicken-walk.png') 100% 0 no-repeat;
+  animation:anim 1s steps(23) infinite,movelr 120s linear reverse infinite;
+  -webkit-animation:anim 1s steps(23) infinite,movelr 120s linear reverse infinite;
+}
+
+.chicken-idle {
+  background: url('../images/chicken-idle-2.png') 100% 0 no-repeat;
+  animation:anim 2s steps(46) infinite;
+  -webkit-animation:anim 2s steps(46) infinite;
+}
+
+.chicken-peck {
+  background: url('../images/chicken-peck-2x.png') 100% 0 no-repeat;
+  animation:anim 1.625s steps(39) infinite;
+  -webkit-animation:anim 1.625s steps(39) infinite;
+}
+
+.chicken-flying {
+  background: url('../images/chicken-flying.png') 100% 0 no-repeat;
+  animation:chicken-fly 1.75s steps(41) infinite;
+  -webkit-animation:chicken-fly 1.75s steps(41) infinite;
+}
+
+@-webkit-keyframes chickenwalk{
+  from{left:42%}
+  to{left:58%}
+}
+@-webkit-keyframes sine{
+  from{margin-top:-64px}
+  to{margin-top:64px}
+}
+@keyframes sine{
+  from{margin-top:-64px}
+  to{margin-top:64px}
+}
+@-webkit-keyframes bottomsine{
+  from{margin-bottom:-64px}
+  to{margin-bottom:64px}
+}
+@keyframes bottomsine{
+  from{margin-bottom:-64px}
+  to{margin-bottom:64px}
+}
+@-webkit-keyframes movelr{
+  from{left:-2%}
+  to{left:101%}
+}
+@keyframes movelr{
+  from{left:-2%}
+  to{left:101%}
+}
+@-webkit-keyframes anim{
+  from{background-position:0 0}
+  to{background-position:100% 0}
+}
+@keyframes anim{
+  from{background-position:0 0}
+  to{background-position:100% 0}
+}
+@-webkit-keyframes anim-nibble{
+  from{background-position:0 0}
+  to{background-position:-5192px 0}
+}
+@keyframes anim-nibble{
+  from{background-position:0 0}
+  to{background-position:-5192px 0}
+}
+@-webkit-keyframes anim-look{
+  from{background-position:0 0}
+  to{background-position:-4136px 0}
+}
+@keyframes anim-look{
+  from{background-position:0 0}
+  to{background-position:-4136px 0}
+}
+@-webkit-keyframes anim-look-reverse{
+  from{background-position:-4136px 0}
+  to{background-position:0 0}
+}
+@keyframes anim-look-reverse{
+  from{background-position:-4136px 0}
+  to{background-position:0 0}
+}
+@-webkit-keyframes chew{
+  from{background-position:-4576px 0}
+  to{background-position:0 0}
+}
+@keyframes chew{
+  from{background-position:-4576px 0}
+  to{background-position:0 0}
+}
+@-webkit-keyframes chicken-look{
+  from{background-position:0 0}
+  to{background-position:-7992px 0}
+}
+@keyframes chicken-look{
+  from{background-position:0 0}
+  to{background-position:-7992px 0}
+}
+@-webkit-keyframes chicken-fly{
+  from{background-position:0 0}
+  to{background-position:-6068px 0}
+}
+@keyframes chicken-fly{
+  from{background-position:0 0}
+  to{background-position:-6068px 0}
+}
